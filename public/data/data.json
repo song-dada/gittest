@@ -1,0 +1,22 @@
+[
+    {
+        "src": "./asset/img1.jpg",
+        "title": "picture_1",
+        "dis": "사진_1"
+    },
+    {
+        "src": "./asset/img2.jpg",
+        "title": "picture_2",
+        "dis": "사진_2"
+    },
+    {
+        "src": "./asset/img3.jpg",
+        "title": "picture_3",
+        "dis": "사진_3"
+    },
+    {
+        "src": "./asset/img4.jpg",
+        "title": "picture_4",
+        "dis": "사진_4"
+    }
+]

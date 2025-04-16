@@ -1,0 +1,18 @@
+.guest-outbox{
+    padding-top: 100px;
+}
+.guest-outbox form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    margin: 20px;
+}
+.msg-card{
+    box-shadow: 5px 0 5px gray;
+    padding: 10px 20px;
+}
+.msg-card h2{
+    padding: 0 20px;
+}

@@ -1,0 +1,96 @@
+.galleryOutbox{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.scroll-img{
+    overflow: hidden;
+    padding: 40px;
+    margin: 20px;
+    width: 100vw;
+}
+
+.scroll-img:hover .scroll-track{
+    animation-play-state: paused;
+    /* 애니메이션이 진행중인상태 정지 되는? 형태를 구현하기 위함*/
+}
+.scroll-track{
+    display: flex;
+    width: max-content;
+    gap: 30px;
+    animation: left-scroll 40000ms linear infinite;
+    animation-play-state: running;
+    /* 애니메이션이 진행중인상태 정지 되는? 형태를 구현하기 위함*/
+}
+
+.scroll-in-box{
+    width: 300px;
+    text-align: center;
+    transition: all 1000ms ease;
+    position: relative;
+
+}
+.scroll-in-box:hover{
+    transform: scale(1.05);
+}
+.scroll-in-box> div:last-of-type{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+.scroll-in-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.fade-section{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.img-box{
+    width: 25%;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.text-box{
+    width: 50%;
+}
+
+.group-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.group-img{
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+@keyframes left-scroll{
+    0%{ transform: translateX(0); }
+    100%{ transform: translateX(-50%); }
+}
